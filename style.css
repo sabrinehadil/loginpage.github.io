@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+*{
+    font-family: poppins,sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #435294, #130c22);
+   
+}
+
+h2{
+    font-size: 2rem;
+    font-family: verdana, geneva,tahoma,sans-serif;
+    background: linear-gradient(90deg, #435294, #130c22);
+    color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2::before{
+    content:"sign up to start";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #0c0a1d;
+    transition: 1s ease-in-out;
+}
+h2:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px #2c1c12);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height */
+}
+.container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: linear-gradient(90deg, #435294, #130c22);
+    padding-bottom: 70px;
+}
+.container form{
+    padding: 20px;
+    width: 700px;
+    background: rgb(251, 250, 248);
+    box-shadow: 0 5px 10px rgba(0,0,0,1);
+}
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.container form .row .col{
+    flex: 1 1 300px;
+}
+  
+.container form .row .col .title{
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.container form .row .col .inputebox{
+    margin: 15px 0;
+}
+.container form .row .col .inputebox span{
+    margin-bottom: 5px;
+    display: block;
+}
+.container form .row .col .inputebox input{
+    width: 100%;
+   border: 1px solid #0a0a0a;
+   padding: 10px 15px;
+    font-size: 15px;
+   text-transform: none;
+}
+.container form .row .col .inputebox input:focus{
+    border:1px solid #000
+}
+.container form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+.container form .row .col .flex .inputebox {
+    margin-top: 5px;
+}
+.container form .row .col .inputebox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+.container form .submit-btn{
+width: 100%;
+padding: 12px;
+font-size: 17px;
+background: #130c22;
+color: rgb(255, 254, 253);
+margin-top: 5px;
+}
+.container form .submit-btn:hover{
+    background: #201139;
+   
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0;
+    background: #130c22;
+  
+    font-size: 15px;
+    margin-top: auto;
+    background: linear-gradient(90deg, #435294, #130c22);
+    color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
